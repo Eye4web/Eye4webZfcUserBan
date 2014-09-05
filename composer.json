@@ -1,0 +1,42 @@
+{
+    "name": "eye4web/eye4web-zfc-user-ban",
+    "description": "Adding ban-functionality to ZfcUser",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "zf2",
+        "ZfcUser",
+        "module"
+    ],
+    "homepage": "https://github.com/Eye4web/Eye4webZfcUserBan",
+    "authors": [
+        {
+            "name": "Daniel Strøm",
+            "email": "ds@eye4web.dk"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master-dev"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework": "~2.3",
+        "zf-commons/zfc-user": "1.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Eye4web\\ZfcUser\\Ban": "src/"
+        },
+        "classmap": [
+            "./src/Eye4web/ZfcUser/Ban/Module.php"
+        ]
+    },
+    "require-dev" : {
+        "phpunit/phpunit" : "4.*",
+        "squizlabs/php_codesniffer" : "1.5.*",
+        "zendframework/zend-captcha" : "~2.1",
+        "codeclimate/php-test-reporter": "dev-master"
+    }
+}
