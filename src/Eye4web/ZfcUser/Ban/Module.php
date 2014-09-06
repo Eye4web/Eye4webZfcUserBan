@@ -18,7 +18,37 @@
 
 namespace Eye4web\ZfcUser\Ban;
 
+use Eye4web\ZfcUser\Ban\Entity\UserBannableInterface;
+use Zend\Mvc\MvcEvent;
+
 class Module
 {
+    public function onBootstrap(MvcEvent $e)
+    {
+        $eventManager = $e->getApplication()->getEventManager();
+        $eventManager->attach(MvcEvent::EVENT_DISPATCH, array($this, 'checkIsBanned'), 1);
+    }
 
+    public function checkIsBanned(MvcEvent $event)
+    {
+        $serviceManager = $event->getApplication()->getServiceManager();
+        $authService = $serviceManager->get('zfcuser_auth_service');
+
+        if ($authService->hasIdentity()) {
+            $user = $authService->getIdentity();
+            if ($user instanceof UserBannableInterface && $user->getIsBanned()) {
+                if ($event->getRouteMatch()->getMatchedRouteName() !== 'eye4web_zfcuser_ban') {
+                    $controller = $event->getTarget();
+                    $response = $controller->plugin('redirect')->toRoute('eye4web_zfcuser_ban');
+                    $event->stopPropagation();
+                    return $response;
+                }
+            }
+        }
+    }
+
+    public function getConfig()
+    {
+        return include __DIR__ . '/../../../../config/module.config.php';
+    }
 }

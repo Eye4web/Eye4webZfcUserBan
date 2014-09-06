@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1410036190">
+  <project timestamp="1410036190">
+    <package name="Eye4web\ZfcUser\Ban\Controller">
+      <file name="/Users/Danielss89/Server/Potterworld/vendor/eye4web/eye4web-zfc-user-ban/src/Eye4web/ZfcUser/Ban/Controller/IndexController.php">
+        <class name="IndexController" namespace="Eye4web\ZfcUser\Ban\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+        </class>
+        <line num="27" type="method" name="indexAction" crap="3" count="3"/>
+        <line num="29" type="stmt" count="3"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <metrics loc="41" ncloc="25" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Ban">
+      <file name="/Users/Danielss89/Server/Potterworld/vendor/eye4web/eye4web-zfc-user-ban/src/Eye4web/ZfcUser/Ban/Module.php">
+        <class name="Module" namespace="Eye4web\ZfcUser\Ban">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="20" coveredelements="20"/>
+        </class>
+        <line num="26" type="method" name="onBootstrap" crap="1" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="32" type="method" name="checkIsBanned" crap="5" count="16"/>
+        <line num="34" type="stmt" count="16"/>
+        <line num="35" type="stmt" count="16"/>
+        <line num="37" type="stmt" count="16"/>
+        <line num="38" type="stmt" count="8"/>
+        <line num="39" type="stmt" count="8"/>
+        <line num="40" type="stmt" count="2"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="7"/>
+        <line num="48" type="stmt" count="15"/>
+        <line num="50" type="method" name="getConfig" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <metrics loc="54" ncloc="38" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="20" coveredelements="20"/>
+      </file>
+    </package>
+    <metrics files="2" loc="95" ncloc="63" classes="2" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="28" coveredelements="28"/>
+  </project>
+</coverage>
