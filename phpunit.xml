@@ -9,7 +9,7 @@
          backupGlobals="false"
          syntaxCheck="true"
 >
-    <testsuite name="Eye4webZfcUserBanLogout Test Suite">
+    <testsuite name="Eye4webZfcUserBan Test Suite">
         <directory>./tests/Eye4webZfcUserBanTest</directory>
     </testsuite>
 
