@@ -94,7 +94,7 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
                     ->will($this->returnValue($banned));
 
                 if ($banned) {
-                    $routeMatch = $this->getMockBuilder('Zend\Mvc\Router\RouteMatch')
+                    $routeMatch = $this->getMockBuilder('Zend\Router\RouteMatch')
                         ->disableOriginalConstructor()
                         ->getMock();
                     $routeMatch->expects($this->once())

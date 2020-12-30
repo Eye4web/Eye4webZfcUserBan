@@ -21,7 +21,7 @@ return [
     'router' => [
         'routes' => [
             'eye4web_zfcuser_ban' => [
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'type' => 'Zend\Router\Http\Literal',
                 'options' => [
                     'route'    => '/banned',
                     'defaults' => [
